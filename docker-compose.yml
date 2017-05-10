@@ -12,6 +12,6 @@
          - "3000:3000"
     links:
       - db
-    command: sh -c "sleep 10 && npm run knex"
+    command: bash -c "sleep 10 && npm run knex"
     environment:
       - DATABASE_URL=postgres://test:test@db:5432/testdb

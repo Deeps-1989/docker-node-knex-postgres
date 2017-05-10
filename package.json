@@ -1,7 +1,7 @@
 {
   "name": "docker-tutorial",
   "version": "1.0.0",
-  "description": "This repository is designed for helping you follow along with the accompanying blog post",
+  "description": "A boilerplate example to start coding with docker postgres and knex in node environment",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,10 +12,10 @@
     "Deepak Sharma"
   ],
   "dependencies": {
-    "@nib-styles/grow-layout": "^3.0.0",
+
     "express": "^4.15.2",
     "knex": "^0.13.0",
-    "pg": "^4.4.1",
-    "retry": "^0.7.0"
+    "pg": "^4.4.1"
+
   }
 }
