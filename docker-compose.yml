@@ -1,0 +1,17 @@
+  db:
+    image: postgres
+    ports:
+       - "5433:5432"
+    environment:
+       - POSTGRES_USER=test
+       - POSTGRES_PASSWORD=test
+       - POSTGRES_DB=testdb
+  app:
+    build: .
+    ports:
+         - "3000:3000"
+    links:
+      - db
+    command: sh -c "sleep 10 && npm run knex"
+    environment:
+      - DATABASE_URL=postgres://test:test@db:5432/testdb
